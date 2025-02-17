@@ -1,50 +1,47 @@
 import React from 'react';
 import './contributors.css';
 
-// Placeholder images - replace with actual contributor images
-const placeholderImage = 'https://via.placeholder.com/300';
-
 const Contributors = () => {
   const contributorsData = [
     {
-      name: "Mbo Alain Gérard",
+      name: "Alain Gérard",
       role: "Team Leader",
       image: "/Alain.jpeg",
-      description: "L'ainé de l'équipe, Alain est le manager en chef du projet.",
+      description: "Manager chevronné guidant l'équipe vers l'excellence stratégique.",
       linkedin: "#",
       github: "#"
     },
     {
-      name: "Negoum Arthur",
-      role: "Responsable du frontend et du service sms",
+      name: "Arthur Negoum",
+      role: "Frontend & SMS",
       image: "/arthur1.jpeg",
-      description: "Il s'est chargé du rendu visuel que vous regardez actuellement et a travaillé sur le service sms avec Twilio.",
+      description: "Architecte du design frontend et expert en services SMS.",
       linkedin: "https://www.linkedin.com/in/yves-arthur-negoum-wouatedem-854967302/",
       github: "https://github.com/arthurogg"
     },
     {
-      name: "Nguiffo Varnel",
-      role: "Responsable notifications whatsapp with META",
+      name: "Varnel Nguiffo",
+      role: "WhatsApp Notifications",
       image: "/nguiffo.jpeg",
-      description: "Rick a travaillé sur les notifications WhatsApp en utilisant Whatsapp Cloud API de META.",
+      description: "Spécialiste des notifications WhatsApp et intégrations API.",
       linkedin: "https://github.com/Ngakou-Rick",
       github: "https://github.com/Ngakou-Rick"
     },
     {
       name: "Audain Meli",
-      role: "Responsable service email",
+      role: "Email Service",
       image: "/audain.jpeg",
-      description: "Audain a travaillé sur le service email avec JavaMail et sur la personnalisation de l'email.",
+      description: "Expert en solutions de communication électronique personnalisées.",
       linkedin: "#",
       github: "https://github.com/Audain672"
     },
     {
-        name: "Nanfah Elsa",
-        role: "Responsable notifications push",
-        image: "/elsa1.jpeg",
-        description: "La seule dame de l'équipe, Elsa garantit la protection et l'efficacité de nos solutions.",
-        linkedin: "#",
-        github: "#"
+      name: "Elsa Nanfah",
+      role: "Push Notifications",
+      image: "/elsa1.jpeg",
+      description: "Garantit la robustesse et l'efficacité des notifications push.",
+      linkedin: "#",
+      github: "#"
     }
   ];
 
@@ -52,7 +49,7 @@ const Contributors = () => {
     <div className="contributors-page">
       <div className="contributors-header">
         <h1 className="section-title">
-          Notre <span className="title-highlight">Équipe</span>
+          Our<span className="title-highlight"> Contributors</span>
         </h1>
         <p className="section-subtitle">
           Les innovateurs derrière AlertX, unis par la passion de la notification intelligente

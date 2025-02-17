@@ -3,9 +3,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import HeroSection from './components/HeroSection/HeroSection';
+import About from './components/About/about';
 import FeaturesSection from './components/FeatureSection/FeatureSection';
-import Footer from './components/Footer/Footer';
 import Contributors from './components/contributors/contributors';
+import Footer from './components/Footer/Footer';
 import Temoignages from './components/temoignages/temoignages';
 import './App.css';
 
@@ -18,10 +19,11 @@ function App() {
           <Route path="/" element={
             <>
               <HeroSection />
+              <About />
               <FeaturesSection />
+              <Contributors />
             </>
           } />
-          <Route path="/contributors" element={<Contributors />} />
           <Route path="/temoignages" element={<Temoignages />} />
         </Routes>
         <Footer />
