@@ -20,6 +20,14 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const openDocumentation = () => {
+    window.open('https://service-de-notication-documentation.vercel.app/', '_blank');
+  };
+  const StartDocumentation = () => {
+    window.open('https://service-de-notication-documentation.vercel.app/AboutRacine/Getting_Start/quickStart', '_blank');
+  };
+
+
   return (
     <header className="header">
       <div className="header-container">
@@ -40,16 +48,21 @@ const Header = () => {
         </nav>
         
         <div className="auth-buttons">
-          <button className="btn btn-login">
-          <span className="btn-icon">🚀</span>
+          <button 
+            className="btn btn-login"
+            onClick={StartDocumentation}
+          >
+            <span className="btn-icon">🚀</span>
             Commencer
           </button>
-          <button className="btn btn-signup">
-          <span className="btn-icon">📡</span>
+          <button 
+            className="btn btn-signup"
+            onClick={openDocumentation}
+          >  
+            <span className="btn-icon">📡</span>
             Voir la documentation
           </button>
         </div>
-
         <div className="mobile-menu-toggle" onClick={toggleMenu}>
           <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
         </div>

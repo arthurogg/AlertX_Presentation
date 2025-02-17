@@ -3,12 +3,18 @@ import React from "react";
 import "./HeroSection.css";
 
 const HeroSection = () => {
+  const openDocumentation = () => {
+    window.open('https://service-de-notication-documentation.vercel.app/', '_blank');
+  };
+  const StartDocumentation = () => {
+    window.open('https://service-de-notication-documentation.vercel.app/AboutRacine/Getting_Start/quickStart', '_blank');
+  };
   return (
     <section className="hero">
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="title">
-            <span className="title-highlight">Notifications</span> Intelligentes
+            <span className="title-highlight">Service de Notifications</span> 
             <br />à Portée de Main
           </h1>
           <p className="subtitle">
@@ -16,11 +22,11 @@ const HeroSection = () => {
             WhatsApp, Email, SMS, Push - Une solution unifiée pour toutes vos communications.
           </p>
           <div className="hero-cta">
-            <button className="btn btn-primary">
+            <button className="btn btn-primary" onClick={StartDocumentation}>
               <span className="btn-icon">🚀</span>
               Commencer Gratuitement
             </button>
-            <button className="btn btn-secondary">
+            <button className="btn btn-secondary" onClick={openDocumentation}>
               <span className="btn-icon">📡</span>
               Documentation API
             </button>
