@@ -8,7 +8,7 @@ const About = () => {
       icon: "fa-bullseye",
       paragraphs: [
         "AlertX est né de la conviction que la communication digitale doit être simple, rapide et efficace. Notre mission est de révolutionner la façon dont les entreprises interagissent avec leurs utilisateurs.",
-        "Nous comprenons que chaque notification est une opportunité de créer une connexion significative. C'est pourquoi nous avons développé une plateforme qui permet aux entreprises d'envoyer des messages personnalisés et instantanés à travers multiple canaux.",
+        "Nous comprenons que chaque notification est une opportunité de créer une connexion significative. C'est pourquoi nous avons développé une plateforme qui permet aux entreprises d'envoyer des messages personnalisés et instantanés à travers plusieurs canaux.",
         "Notre objectif est de transformer la communication numérique en un processus transparent, où chaque message compte et chaque interaction a un impact."
       ]
     },
@@ -25,7 +25,7 @@ const About = () => {
       title: "Nos Avantages Uniques",
       icon: "fa-rocket",
       paragraphs: [
-        "AlertX se démarque par sa capacité à offrir une solution de notification véritablement multicanal. Que ce soit via SMS, WhatsApp, Email ou Notifications Push, nous garantissons une intégration fluide et une expérience utilisateur exceptionnelle.",
+        "AlertX se distinguant par sa capacité à offrir une solution de notification véritablement multicanal. Que ce soit via SMS, WhatsApp, Email ou Notifications Push, nous garantissons une intégration fluide et une expérience utilisateur exceptionnelle.",
         "Contrairement aux solutions traditionnelles, nous offrons une personnalisation poussée. Nos algorithmes intelligents permettent d'adapter chaque message au profil et aux préférences de chaque utilisateur.",
         "Avec des temps de livraison ultra-rapides, une sécurité de pointe et une fiabilité à toute épreuve, AlertX devient le partenaire technologique indispensable pour toute entreprise soucieuse de maintenir une communication de qualité."
       ]
@@ -36,10 +36,10 @@ const About = () => {
     <div className="about-section">
       <div className="about-header">
         <h2 className="section-title">
-          À <span className="title-highlight">Propos</span> d'AlertX
+          About <span className="title-highlight">AlertX</span>
         </h2>
         <p className="section-subtitle">
-          Transformer la Communication Digitale, Une Notification à la Fois
+          Transforming Digital Communication, One Notification at a Time
         </p>
       </div>
       

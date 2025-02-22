@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "./Header.css";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleFeaturesScroll = (e) => {
@@ -20,13 +21,15 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const openDocumentation = () => {
-    window.open('https://service-de-notication-documentation.vercel.app/', '_blank');
-  };
-  const StartDocumentation = () => {
-    window.open('https://service-de-notication-documentation.vercel.app/AboutRacine/Getting_Start/quickStart', '_blank');
+  const handleSignUp = () => {
+    // Navigate to signup page
+    navigate('/signup');
   };
 
+  const handleSignIn = () => {
+    // Navigate to signin page
+    navigate('/signin');
+  };
 
   return (
     <header className="header">
@@ -48,18 +51,18 @@ const Header = () => {
         
         <div className="auth-buttons">
           <button 
-            className="btn btn-login"
-            onClick={StartDocumentation}
+            className="btn btn-signup"
+            onClick={handleSignUp}
           >
             <span className="btn-icon">🚀</span>
-            Commencer
+            Sign Up
           </button>
           <button 
-            className="btn btn-signup"
-            onClick={openDocumentation}
+            className="btn btn-login"
+            onClick={handleSignIn}
           >  
-            <span className="btn-icon">📡</span>
-            Voir la documentation
+            <span className="btn-icon">🔒</span>
+            Sign In
           </button>
         </div>
         <div className="mobile-menu-toggle" onClick={toggleMenu}>

@@ -6,15 +6,14 @@
   --background-color: #ffffff;  /* Pure white */
 }
 
-.about-section {
+.developpers-section {
   max-width: 1400px;
   margin: 0 auto;
   padding: 6rem 40px;
-  background-color: var(--accent-color);
-  overflow-x: auto;
+  background-color: var(--background-color);
 }
 
-.about-header {
+.developpers-header {
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -36,15 +35,15 @@
   line-height: 1.6;
 }
 
-.about-grid {
+.developpers-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   width: 100%;
 }
 
-.about-card {
-  background-color: var(--background-color);
+.developpers-card {
+  background-color: var(--accent-color);
   border-radius: 25px;
   box-shadow: 0 15px 35px rgba(44, 62, 80, 0.1);
   padding: 2.5rem;
@@ -55,41 +54,41 @@
   text-align: left;
 }
 
-.about-card:hover {
+.developpers-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 45px rgba(44, 62, 80, 0.15);
 }
 
-.about-icon-container {
+.developpers-icon-container {
   width: 120px;
   height: 120px;
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--accent-color);
+  background-color: var(--background-color);
   border-radius: 50%;
 }
 
-.about-icon-container i {
+.developpers-icon-container i {
   color: var(--secondary-color);
   font-size: 4rem;
 }
 
-.about-content {
+.developpers-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-title {
+.developpers-title {
   font-size: 1.6rem;
   color: var(--primary-color);
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
-.about-paragraph {
+.developpers-paragraph {
   color: rgba(52, 73, 94, 0.8);
   font-size: 1rem;
   line-height: 1.7;
@@ -97,45 +96,27 @@
   text-align: left;
 }
 
-.about-paragraph:last-child {
+.developpers-paragraph:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
-  .about-grid {
+  .developpers-grid {
     grid-template-columns: 1fr;
-  }
-
-  .about-card {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .about-section {
+  .developpers-section {
     padding: 4rem 20px;
   }
 
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .about-title {
-    font-size: 1.4rem;
-  }
-
-  .about-paragraph {
-    font-size: 0.95rem;
-  }
-
-  .about-icon-container {
+  .developpers-icon-container {
     width: 100px;
     height: 100px;
   }
 
-  .about-icon-container i {
+  .developpers-icon-container i {
     font-size: 3rem;
   }
 }
